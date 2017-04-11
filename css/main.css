@@ -90,6 +90,7 @@ button{
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
+    outline: none;
 }
 
 #banner button:hover{
