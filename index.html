@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>主页</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -11,12 +11,12 @@
     <div class="main-wrapper">
         <header><!--页头开始-->
             <nav>
-                <div class="logo"><a href="#">李全杰</a></div>
-                <ul>
-                    <li><a href="#" class="active">首页</a></li>
-                    <li><a href="#">链接2</a></li>
+                <div class="logo"><a href="index.html">李全杰</a></div>
+                <ul id="navbar">
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="article.html">文章模板</a></li>
                     <li><a href="#">链接3</a></li>
-                    <li><a href="#">链接4</a></li>
+                    <li id="sidebar_trigger"><a href="#">侧栏菜单</a></li>
                 </ul>
             </nav>
             <div id="banner">
@@ -135,6 +135,24 @@
             </div>
         </footer><!--页脚结束-->
     </div>
+
+    <!--遮罩层-->
+    <div class="mask"></div>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">item1</a></li>
+            <li><a href="#">item2</a></li>
+            <li><a href="#">item3</a></li>
+            <li><a href="#">item4</a></li>
+            <li><a href="#">item5</a></li>
+        </ul>
+    </div>
+
+    <button class="back-to-top">
+        <i class="fa fa-hand-pointer-o"></i>
+        返回顶部
+    </button>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/main.js"></script>
